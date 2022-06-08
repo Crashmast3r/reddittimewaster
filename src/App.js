@@ -1,22 +1,29 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+
+  const toggleNav = () => {
+    document.getElementById("navDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches(".navBtn")) {
+      document.getElementById("navDropdown").classList.remove("show");
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <h1>Reddit Time Waster</h1>
+        <div className="navContainer">
+          <button onClick={toggleNav} className="navBtn">=</button>
+          <div id="navDropdown" className="navMenu">
+            <a href="https://www.google.com/" className="navLink">Google</a>
+            <a href="https://www.netflix.com/" className="navLink">Netflix</a>
+          </div>
+        </div>
       </header>
     </div>
   );
