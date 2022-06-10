@@ -1,16 +1,13 @@
 .App {
-  background-color: black;
+  background-color: darkslategray;
 }
 
 .App-header {
+  background-color: black;
   padding: auto;
   position: sticky;
-}
-
-.App-header img {
-  height: inherit;
-  display: inline;
-  background-color: white;
+  border-bottom: 2px solid white;
+  border-radius: .3rem;
 }
 
 h1 {
@@ -24,9 +21,9 @@ h1 {
 
 .navContainer {
   display: inline;
-  margin-top: .3rem;
-  margin-right: .3rem;
-  float: right;
+  top: .5rem;
+  right: .3rem;
+  position: fixed;
 }
 
 .navBtn {
@@ -35,13 +32,15 @@ h1 {
   float: right;
   width: 2rem;
   height: 2rem;
+  font-weight: bold;
+  font-size: x-large;
   }
 
 /* navMenu Styling */
 .navMenu {
   display: none;
   position: relative;
-  background-color: darkslategray;
+  background-color: black;
   width: 5rem;
   right: 0;
   padding: .3rem;
@@ -52,7 +51,7 @@ h1 {
 
 .navLink {
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5%;
   color: white;
   padding: .3rem;

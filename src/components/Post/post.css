@@ -1,0 +1,28 @@
+.post-container {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: .3rem;
+    margin: .8rem;
+    padding-left: .5rem;
+    width: 80vw;
+    height: 10rem;
+}
+
+.sub-poster {
+    color: darkgray;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.post-title {
+    color: white;
+    font-weight: bold;
+}
+
+.post-content {
+    color: white;
+    border: 1px solid white;
+    border-radius: .3rem;
+    padding-left: .3rem;
+}
+
